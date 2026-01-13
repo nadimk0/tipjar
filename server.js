@@ -37,4 +37,6 @@ http.createServer((req, res) => {
   }
 
   res.end("OK");
-}).listen(3000, () => console.log("OPEN http://localhost:3000/frame"));
+const PORT = process.env.PORT || 3000;
+}).listen(PORT, () => console.log("TipJar running on", PORT));
+
